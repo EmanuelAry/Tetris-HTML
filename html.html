@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Projeto T</title>
+  <script src="js.js"></script>
+  <link rel="stylesheet" type="text/css" href="css.css" media="screen" />
+</head>
+<body onkeydown="setDirection(event.keyCode)">
+  <div class="game">
+    <div id="grid">
+    </div>
+    <div class="labels">
+      <label for="cobra">Peças Livres:</label>
+      <input type="color" value="#FBCA49" id="peca_livre" onchange="desenhar()">
+      <label for="comida">Peças Solidas:</label>
+      <input type="color" value="#F11362" id="peca_solida" onchange="desenhar()">
+      <label for="campo">Campo:</label>
+      <input type="color" value="#00CE8D" id="campo" onchange="desenhar()">
+    </div>
+    <div>
+      <table id="tbpontos">
+        <tr>
+          <th>N°</th>
+          <th>Pontos</th>
+        </tr>
+      </table>
+    </div>  
+  </div>
+  <br>
+  <button id="iniciar" onclick="iniciar()">Iniciar</button>
+</body>
+</html>
